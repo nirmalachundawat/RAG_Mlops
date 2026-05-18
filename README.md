@@ -7,17 +7,12 @@ A fully production-ready **Retrieval-Augmented Generation (RAG)** system designe
 ## Table of Contents
 
 - [Overview](#overview)
-- [Architecture](#architecture)
-- [MLOps Features](#mlops-features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
 - [API Reference](#api-reference)
 - [Evaluation](#evaluation)
 - [MLflow Tracking](#mlflow-tracking)
-- [Configuration](#configuration)
-- [Roadmap](#roadmap)
 
 ---
 
