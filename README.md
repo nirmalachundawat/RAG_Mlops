@@ -38,6 +38,7 @@ The system answers questions grounded strictly in your uploaded documents, cites
 | **Overall** | **0.70** | **Production-ready baseline** |
 
 ---
+
 ## System Flow
 
 PDF Documents
@@ -74,6 +75,8 @@ User Query
       ▼                        ▼
 FastAPI Response          Query Logger
 (JSON + citations)    (logs/query_log.jsonl)
+
+----
 
 ## Tech Stack
 
