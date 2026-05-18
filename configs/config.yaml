@@ -1,0 +1,33 @@
+# Data settings
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  chunk_size: 500
+  chunk_overlap: 50
+
+# Embedding model (versioned)
+embedding:
+  model_name: "all-MiniLM-L6-v2"
+  version: "v1"
+
+# Vector store
+vector_store:
+  index_dir: "indexes"
+  index_name: "faiss_index_v1"
+  top_k: 5
+
+# LLM
+llm:
+  model: "llama-3.3-70b-versatile"
+  temperature: 0.2
+  max_tokens: 1024
+
+# MLOps
+mlops:
+  experiment_name: "rag-doc-qa"
+  tracking_uri: "experiments/mlruns"
+
+# Logging
+logging:
+  log_dir: "logs"
+  level: "INFO"

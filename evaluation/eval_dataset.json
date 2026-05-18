@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What are the three stages of RAG development?",
+        "ground_truth": "The three stages of RAG development are Naive RAG, Advanced RAG, and Modular RAG."
+    },
+    {
+        "question": "What is the main limitation of Naive RAG?",
+        "ground_truth": "Naive RAG faces challenges in precision and recall, with issues like retrieving irrelevant chunks, missing crucial information, and potential hallucination in generated answers."
+    },
+    {
+        "question": "How does Advanced RAG improve upon Naive RAG?",
+        "ground_truth": "Advanced RAG introduces pre-retrieval and post-retrieval strategies, optimizes indexing, uses sliding window chunks, and applies reranking to improve retrieval quality and answer accuracy."
+    },
+    {
+        "question": "What is Modular RAG?",
+        "ground_truth": "Modular RAG is an architecture that allows for module substitution, reconfiguration, and integration of new modules, offering enhanced adaptability and versatility beyond Naive and Advanced RAG."
+    },
+    {
+        "question": "What evaluation metrics are used to assess RAG systems?",
+        "ground_truth": "RAG systems are evaluated using metrics like faithfulness, answer relevancy, context precision, and context recall, often measured using frameworks like RAGAS."
+    }
+]

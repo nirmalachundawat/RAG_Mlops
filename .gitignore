@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+
+# API keys
+.env
+
+# Data & indexes (too large for GitHub)
+data/raw/
+data/processed/
+indexes/
+
+# Logs
+logs/
+
+# MLflow experiments
+experiments/
+
+# Evaluation results
+evaluation/eval_results_*.json
+evaluation/eval_results_*.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/

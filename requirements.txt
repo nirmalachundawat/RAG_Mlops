@@ -1,0 +1,28 @@
+# Core RAG
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-groq==0.1.9
+faiss-cpu==1.12.0
+sentence-transformers==3.0.1
+
+# Document loading
+pypdf==4.3.1
+unstructured==0.15.0
+
+# MLOps
+mlflow==2.15.1
+python-dotenv==1.0.1
+pyyaml==6.0.2
+
+# Evaluation
+ragas==0.1.21
+datasets==2.21.0
+
+# API & serving
+fastapi==0.112.0
+uvicorn==0.30.6
+
+# Utilities
+pandas==2.2.2
+tqdm==4.66.5
+loguru==0.7.2
