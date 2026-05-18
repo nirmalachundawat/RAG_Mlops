@@ -39,45 +39,6 @@ The system answers questions grounded strictly in your uploaded documents, cites
 
 ---
 
-## System Flow
-
-PDF Documents
-     │
-     ▼
-┌──────────────────────────────┐
-│  Ingestion Pipeline          │
-│  PyMuPDF → OCR → Chunker    │ ──► MLflow (ingestion run)
-└─────────────┬────────────────┘
-              │
-              ▼
-┌──────────────────────────────┐
-│  Embedding + FAISS Index     │
-│  all-MiniLM-L6-v2 (384d)    │ ──► MLflow (index_build run)
-└─────────────┬────────────────┘
-              │
-      ┌───────┘
-      │
-User Query
-      │
-      ▼
-┌──────────────────────────────┐
-│  FAISS Retriever             │
-│  Top-K semantic search       │
-└─────────────┬────────────────┘
-              │
-              ▼
-┌──────────────────────────────┐
-│  Groq LLM Generator          │
-│  LLaMA 3.3 70B Versatile     │ ──► Token tracking, latency
-└─────────────┬────────────────┘
-              │
-      ┌───────┴────────────────┐
-      ▼                        ▼
-FastAPI Response          Query Logger
-(JSON + citations)    (logs/query_log.jsonl)
-
-----
-
 ## Tech Stack
 
 | Layer | Tool | Purpose |
